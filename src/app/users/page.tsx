@@ -2,8 +2,8 @@ import React from "react";
 import { IUser } from "@/interfaces/IUser";
 import Card from "@/components/Card";
 
-const Users = async () => {
-  const data = await fetch(`${process.env.BACKEND_URL}/users`, {
+const UsersPage = async () => {
+  const data = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/users`, {
     cache: "no-store",
   });
   const users: IUser[] = await data.json();
@@ -17,4 +17,4 @@ const Users = async () => {
   );
 };
 
-export default Users;
+export default UsersPage;
