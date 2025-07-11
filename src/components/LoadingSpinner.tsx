@@ -13,11 +13,12 @@ const LoadingSpinner = () => {
         <span className="loading loading-spinner text-warning"></span>
         <span className="loading loading-spinner text-error"></span>
       </div>
-      <div className="flex justify-center items-center w-full p-20">
-        <h1 className="text-4xl">
-          Your free instance will spin down with inactivity, which can delay
-          requests by 50 seconds or more.
-        </h1>
+      <div className="flex justify-center items-center w-full p-50">
+        <h2 className="text-4xl">
+          ⚠️ Через використання безкоштовного сервера перший запит після
+          тривалої бездіяльності може виконуватись із затримкою до 50 секунд.
+          Дякуємо за розуміння!
+        </h2>
       </div>
     </>
   );

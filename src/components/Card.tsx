@@ -11,10 +11,6 @@ const Card = async ({ user }: CardProps) => {
     <div className="p-2">
       <article className="rounded-xl border-2 border-gray-100 bg-white">
         <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-8">
-          {/*<Link className="p-3 flex justify-center bg-red-500 " href={""}>*/}
-          {/*  Click*/}
-          {/*</Link>*/}
-
           <DeleteButton userId={user.id} />
 
           <div>

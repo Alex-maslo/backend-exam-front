@@ -9,7 +9,7 @@ const UsersPage = async () => {
   const users: IUser[] = await data.json();
 
   return (
-    <div className="w-full pr-40 pl-40">
+    <div className="w-full lg:pr-40 lg:pl-40">
       {users.map((user) => (
         <Card key={user.id} user={user} />
       ))}
